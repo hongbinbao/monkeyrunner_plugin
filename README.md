@@ -6,7 +6,7 @@ android monkeyrunner plugin for automation test and support image comparison
 #### Installation
     monkeyrunner
     verify.jar
-    sikuli-script-32bits.jar on 32bit host
+    sikuli-script-32bits.jar on 32bits host
     sikuli-script-64bits.jar on 64bits host
 
 #### demo
