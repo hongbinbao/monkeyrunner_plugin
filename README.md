@@ -1,7 +1,7 @@
 monkeyrunner_plugin
 ===================
 
-android monkeyrunner plugin for automation test and support image comparison
+android monkeyrunner plugin for automation test and support image comparison by sikuli API
 
 #### Installation
     monkeyrunner
