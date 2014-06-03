@@ -34,4 +34,4 @@ android monkeyrunner plugin for automation test and support image comparison by 
     
     #similarity= 0.8, rotating device 90/180/270 degrees counterclockwise\
     rotation_90_point = vf().getLocation('phone_dial_icon.png', 'app_phone_screen', 0.8, 90)
-    x_rotation_90_counterclockwise, yx_rotation_90_counterclockwise = natural_point
+    x_rotation_90_counterclockwise, y_rotation_90_counterclockwise = rotation_90_point
