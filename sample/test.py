@@ -37,7 +37,13 @@ else:
 #touch the center point coordinate of the image which exists in current screenshot
 DUT.takeSnapshot().writeToFile(app_phone_screen_1)
 #search the touch-able image and return the center point location coordinate in natural screen orientation
-point =  vf().getLocation(app_phone_dialbutton_icon, app_phone_screen_1)
+#monkeyrunner will always take the top left corner coordinates of app's real orientation as it's (0.0) point. 
+#similarity=0.8, rotation=90 (90,180,270 means real app screen orientation)
+#0, natural display, app display orientation
+#90, landscape display, rotating device 90 degrees counterclockwise
+#180, natural invert display, rotating device 180 degrees counterclockwise
+#270, landscape invert display, rotating device 180 degrees counterclockwise
+point =  vf().getLocation(app_phone_dialbutton_icon, app_phone_screen_1, 0.8, 90)
 
 if point:
     x_orientation_natural, y_orientation_natural = point
